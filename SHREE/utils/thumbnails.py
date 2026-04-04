@@ -11,7 +11,7 @@ import os
 import re
 import aiohttp
 import aiofiles
-from ISTKHAR import app
+from SHREE import app
 from config import YOUTUBE_IMG_URL
 from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 from youtubesearchpython.__future__ import VideosSearch
@@ -88,13 +88,13 @@ async def get_thumb(videoid):
         background.paste(bordered_center_thumb, (pos_x, pos_y))
 
         
-        arial = ImageFont.truetype("ISTKHAR/assets/font2.ttf", 30)
-        font = ImageFont.truetype("ISTKHAR/assets/font.ttf", 30)
+        arial = ImageFont.truetype("SHREE/assets/font2.ttf", 30)
+        font = ImageFont.truetype("SHREE/assets/font.ttf", 30)
         bold_font = ImageFont.truetype("ISTKHAR/assets/font.ttf", 33)
 
     
         text_size = draw.textsize("@ROOHIISTKHAR   ", font=font)
-        draw.text((1280 - text_size[0] - 10, 10), "@ROOHIISTKHAR   ", fill="yellow", font=font)
+        draw.text((1280 - text_size[0] - 10, 10), "@SHREMUSICBOT   ", fill="yellow", font=font)
 
     
         draw.text(
