@@ -26,15 +26,15 @@ from config import BANNED_USERS
 from strings import get_string
 
 
-SHASHANK_PIC = [
-    "https://files.catbox.moe/t6485t.jpg",
-    "https://files.catbox.moe/4osoc3.jpg",
-    "https://files.catbox.moe/t6485t.jpg",
-    "https://files.catbox.moe/5e18lv.jpg",
-    "https://files.catbox.moe/bupvsx.jpg",
-    "https://files.catbox.moe/w7f2wa.jpg",
-    "https://files.catbox.moe/2b2dam.jpg",
-    "https://files.catbox.moe/qity19.jpg"
+ISTKHAR_PIC = [
+    "https://files.catbox.moe/nvw6s0.jpg",
+    "https://files.catbox.moe/6g05v4.jpg",
+    "https://files.catbox.moe/qqtufa.jpg",
+    "https://files.catbox.moe/4f729r.jpg",
+    "https://files.catbox.moe/m63gyy.jpg",
+    "https://files.catbox.moe/v96nbv.jpg",
+    "https://files.catbox.moe/59qx3v.jpg",
+    "https://files.catbox.moe/95q7xc.jpg"
 ]
 
 
@@ -47,7 +47,7 @@ async def start_pm(client, message: Message, _):
         if name[0:4] == "help":
             keyboard = help_pannel(_)
             return await message.reply_photo(
-                random.choice(SHASHANK_PIC),
+                random.choice(ISTKHAR_PIC),
                 has_spoiler=True,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
