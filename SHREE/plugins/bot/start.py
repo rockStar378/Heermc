@@ -100,7 +100,7 @@ async def start_pm(client, message: Message, _):
     else:
         out = private_panel(_)
         await message.reply_photo(
-            random.choice(SHASHANK_PIC),
+            random.choice(ISTKHAR_PIC),
             has_spoiler=True,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             # caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM,served_users,served_chats),
@@ -119,7 +119,7 @@ async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
     await message.reply_photo(
-        random.choice(SHASHANK_PIC),
+        random.choice(ISTKHAR_PIC),
         has_spoiler=True,
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
