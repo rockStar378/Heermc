@@ -53,7 +53,9 @@ AUTO_SUGGESTION_TIME = int(
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
 SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 
-
+# Vars For API End Pont.
+YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
+YT_API_KEY = getenv("YT_API_KEY" , 'xbit_zVATHL2zaR9xkUdxIuhx_UeJodl5zkz4') ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
 
 PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", 25))
 
