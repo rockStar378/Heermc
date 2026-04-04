@@ -53,7 +53,6 @@ async def get_thumb(videoid: str) -> str:
     thumb_img = base.resize((900, 450))
     x = (1280 - 900) // 2
     y = 120
-
     bg.paste(thumb_img, (x, y))
 
     # ===== GOLDEN FRAME =====
@@ -79,9 +78,30 @@ async def get_thumb(videoid: str) -> str:
     try:
         title_font = ImageFont.truetype("SHREE/assets/font2.ttf", 42)
         info_font = ImageFont.truetype("SHREE/assets/font.ttf", 28)
+        tag_font = ImageFont.truetype("SHREE/assets/font.ttf", 28)
     except:
         title_font = ImageFont.load_default()
         info_font = ImageFont.load_default()
+        tag_font = ImageFont.load_default()
+
+    # ===== TOP RIGHT USERNAME =====
+    right_text = "@IAMISTKHAR"
+    w_right = draw.textlength(right_text, font=tag_font)
+
+    draw.text(
+        (1280 - w_right - 20, 20),
+        right_text,
+        fill=(255, 255, 0),
+        font=tag_font,
+    )
+
+    # ===== BOTTOM LEFT USERNAME =====
+    draw.text(
+        (20, 680),
+        "@ITZZ_ISTKHAR",
+        fill=(255, 255, 0),
+        font=tag_font,
+    )
 
     # ===== TITLE =====
     title = title[:60]
@@ -95,7 +115,7 @@ async def get_thumb(videoid: str) -> str:
     )
 
     # ===== INFO =====
-    info = f"YouTube : {views} | Time : {duration} | Player : @YourBot"
+    info = f"YouTube : {views} | Time : {duration} | Player : @IAMISTKHAR"
     w2 = draw.textlength(info, font=info_font)
 
     draw.text(
