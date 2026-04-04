@@ -61,10 +61,14 @@ async def get_thumb(videoid):
         background.paste(bordered, (pos_x, pos_y))
 
         # fonts (FIX PATH)
-        arial = ImageFont.truetype("SHREE/assets/font2.ttf", 30)
-font = ImageFont.truetype("SHREE/assets/font.ttf", 30)
-bold = ImageFont.truetype("SHREE/assets/font.ttf", 33)
-
+        try:
+    arial = ImageFont.truetype("SHREE/assets/font2.ttf", 30)
+    font = ImageFont.truetype("SHREE/assets/font.ttf", 30)
+    bold = ImageFont.truetype("SHREE/assets/font.ttf", 33)
+except:
+    arial = ImageFont.load_default()
+    font = ImageFont.load_default()
+    bold = ImageFont.load_default()
         # text
         draw.text((1000, 10), "@YOURBOT", fill="yellow", font=font)
 
