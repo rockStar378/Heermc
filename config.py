@@ -41,8 +41,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 # ================= SUPPORT =================
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/IAMISTKHAR")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/ITZZ_ISTKHAR")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/shree_update")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+uIBP86AzzcI4ZDBk")
 
 # ================= LIMITS =================
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "54000"))
