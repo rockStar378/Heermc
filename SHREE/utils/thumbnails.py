@@ -95,7 +95,7 @@ async def get_thumb(videoid: str) -> str:
     )
 
     # ===== INFO =====
-    info = f"YouTube : {views} | Time : {duration} | Player : @ITZZ_ISTKHAR"
+    info = f"YouTube : {views} | Time : {duration} | Player : @shree_update"
     w2 = draw.textlength(info, font=info_font)
 
     draw.text(
