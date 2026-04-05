@@ -51,8 +51,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("IAMISTKHAR")
-                await self.one.join_chat("ITZZ_ISTKHAR")
+                await self.one.join_chat("shree_update")
+                await self.one.join_chat("shree_update")
             except:
                 pass
             assistants.append(1)
@@ -72,8 +72,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("IAMISTKHAR")
-                await self.two.join_chat("ITZZ_ISTKHAR")
+                await self.two.join_chat("shree_update")
+                await self.two.join_chat("shree_update")
             except:
                 pass
             assistants.append(2)
@@ -93,8 +93,8 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("IAMISTKHAR")
-                await self.three.join_chat("ITZZ_ISTKHAR")
+                await self.three.join_chat("shree_update")
+                await self.three.join_chat("shree_update")
             except:
                 pass
             assistants.append(3)
@@ -114,8 +114,8 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("IAMISTKHAR")
-                await self.four.join_chat("ITZZ_ISTKHAR")
+                await self.four.join_chat("shree_update")
+                await self.four.join_chat("shree_update")
             except:
                 pass
             assistants.append(4)
@@ -135,8 +135,8 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("IAMISTKHAR")
-                await self.five.join_chat("ITZZ_ISTKHAR")
+                await self.five.join_chat("shree_update")
+                await self.five.join_chat("shree_update")
             except:
                 pass
             assistants.append(5)
